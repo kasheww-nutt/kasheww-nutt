@@ -12,7 +12,7 @@ Right now: next-day air quality forecasting for Delhi, and learning data structu
 
 | | Question | What happened |
 |---|---|---|
-| 🟢 | **Can a model beat "tomorrow = today" for Delhi air quality?** | Narrowly. Macro-F1 0.600 against 0.583 on a held-out year, across 34 stations. It only won once I added a physics forecast as a feature. |
+| 🟢 | [**Can a model beat "tomorrow = today" for Delhi air quality?**](https://github.com/kasheww-nutt/delhi-aqi-agentic-forecast) | Narrowly. Macro-F1 0.600 against 0.583 on a held-out year, across 34 stations. It only won once I added a physics forecast as a feature. |
 | 🟢 | [**Do three CNNs together beat the best one?**](https://github.com/kasheww-nutt/AgriMinds) | On hard crops, yes. Wheat went from 88.0% to 91.0%. On easy crops it changed almost nothing. |
 | 🟡 | **Does diffusion-generated sensor data help stress detection?** | No. Across 15 leave-one-subject-out folds nothing was significant. The classifier was already at 0.90 with 5% of the data. |
 | 🔴 | [**Is speculative decoding faster in Hindi and Urdu?**](https://github.com/kasheww-nutt/speculative-decoding-multilingual) | Not on my laptop. 0.92x at best, because the small model was not cheap enough. Urdu accepted the fewest draft tokens. |
