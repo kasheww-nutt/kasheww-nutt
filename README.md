@@ -1,4 +1,8 @@
 <div align="center">
+  <img src="assets/knight.svg" alt="An ASCII knight kneeling in a field of poppies, rendered live next to the code that draws it" width="100%" />
+</div>
+
+<div align="center">
   <img src="assets/hero.svg" alt="Shaik Kashif runs every model against its baseline: 2 wins, 2 losses, reported either way" width="100%" />
 </div>
 
