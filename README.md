@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/hero.svg" alt="Shaik Kashif runs every model against its baseline: 2 wins, 2 losses, reported either way" width="100%" />
+  <img src="assets/eval.svg" alt="Every model against its baseline: 2 wins, 2 losses, reported either way" width="100%" />
 </div>
 
 ### I build a model, then try to prove it wrong.
