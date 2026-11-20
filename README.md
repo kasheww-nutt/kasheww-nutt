@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="assets/knight-v2.svg" alt="An ASCII knight kneeling in a field of poppies" width="100%" />
+  <img src="assets/knight-v3.svg" alt="An ASCII knight kneeling in a field of poppies" width="100%" />
 </div>
 
 <div align="center">
-  <img src="assets/eval-v2.svg" alt="Every model against its baseline: 2 wins, 2 losses, reported either way" width="100%" />
+  <img src="assets/eval-v3.svg" alt="Every model against its baseline: 2 wins, 2 losses, reported either way" width="100%" />
 </div>
 
 ### I build a model, then try to prove it wrong.

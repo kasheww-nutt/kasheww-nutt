@@ -18,8 +18,8 @@ text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberatio
 <rect width="1118" height="330" fill="url(#fadeTop)"/>
 
 <g class="hudin">
-  <path d="M10 36V10H36 M1082 10H1108V36 M1108 294V320H1082 M36 320H10V294" fill="none" stroke="#7ee7ff" stroke-opacity=".55" stroke-width="1.5"/>
-  <text x="32" y="44" font-size="13" fill="#8a93a8">evaluate.py <tspan fill="#7ee7ff">--all</tspan> <tspan fill="#7ee7ff">--against-baseline</tspan></text>
+  <path d="M10 36V10H36 M1082 10H1108V36 M1108 294V320H1082 M36 320H10V294" fill="none" stroke="#d6cfbf" stroke-opacity=".28" stroke-width="1"/>
+  <text x="32" y="44" font-size="13" fill="#8a93a8">evaluate.py <tspan fill="#d6cfbf">--all</tspan> <tspan fill="#d6cfbf">--against-baseline</tspan></text>
   <text x="1086" y="44" text-anchor="end" font-size="13" fill="#8a93a8"><tspan fill="#3ddc97" font-weight="700">2 wins</tspan>  ·  <tspan fill="#ff3b4e" font-weight="700">2 losses</tspan>  ·  reported either way</text>
 </g>
 
