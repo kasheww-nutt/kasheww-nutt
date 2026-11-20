@@ -6,6 +6,10 @@
   <img src="assets/eval-v3.svg" alt="Every model against its baseline: 2 wins, 2 losses, reported either way" width="100%" />
 </div>
 
+<div align="center">
+  <img src="assets/contrib.svg" alt="A year of contributions drawn as an ASCII mountain range, redrawn daily" width="100%" />
+</div>
+
 ### I build a model, then try to prove it wrong.
 
 Most of my projects start with a baseline that is annoyingly hard to beat. Sometimes I beat it and sometimes I don't, and the terminal above shows both. The two studies that ended in "it did not help" taught me more than the wins.

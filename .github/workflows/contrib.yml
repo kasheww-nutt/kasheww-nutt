@@ -1,0 +1,54 @@
+name: contribution ridge
+
+on:
+  schedule:
+    - cron: "17 3 * * *"     # every day, 03:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contrib
+  cancel-in-progress: true
+
+jobs:
+  ridge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install numpy
+
+      - name: Fetch the contribution calendar
+        env:
+          # CONTRIB_TOKEN (read:user) also counts private contributions; GITHUB_TOKEN sees public ones only
+          GH_TOKEN: ${{ secrets.CONTRIB_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          gh api graphql -F login="${{ github.repository_owner }}" -f query='
+            query($login: String!) {
+              user(login: $login) {
+                contributionsCollection {
+                  contributionCalendar {
+                    totalContributions
+                    weeks { contributionDays { date contributionCount weekday } }
+                  }
+                }
+              }
+            }' > "$RUNNER_TEMP/contrib.json"
+
+      - name: Draw the ridge
+        run: python scripts/contrib_ridge.py "$RUNNER_TEMP/contrib.json" assets/contrib.svg "${{ github.repository_owner }}"
+
+      - name: Commit if it changed
+        run: |
+          git diff --quiet -- assets/contrib.svg && { echo "no change"; exit 0; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contrib.svg
+          git commit -m "Redraw the contribution ridge"
+          git push
