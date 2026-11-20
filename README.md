@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/knight.webp" alt="An ASCII knight kneeling in a field of poppies" width="100%" />
+  <img src="assets/knight.svg" alt="An ASCII knight kneeling in a field of poppies" width="100%" />
 </div>
 
 <div align="center">
