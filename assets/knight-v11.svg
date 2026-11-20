@@ -150,7 +150,7 @@
 
 <g class="det" style="animation-delay:0.35s">
   <g class="trk t0">
-    <rect x="455" y="58" width="323" height="597" fill="#e0c48a" fill-opacity=".035" stroke="#e0c48a" stroke-opacity=".28" stroke-width="1" stroke-dasharray="2 5"/>
+    <rect x="455" y="58" width="323" height="597" fill="none" stroke="#e0c48a" stroke-opacity=".28" stroke-width="1" stroke-dasharray="2 5"/>
     <path d="M455 74V58H471 M762 58H778V74 M778 639V655H762 M471 655H455V639" fill="none" stroke="#e0c48a" stroke-width="2"/>
     <rect x="455" y="39" width="102" height="17" fill="#e0c48a"/>
     <text x="461" y="51.5" font-size="12" font-weight="700" fill="#06070a">knight</text><text class="sc s0" x="518" y="51.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:0.95s">0.97</text><text class="sc s1" x="518" y="51.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:1.45s">0.96</text><text class="sc s2" x="518" y="51.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:1.95s">0.97</text><text class="sc s3" x="518" y="51.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:2.45s">0.98</text>
@@ -158,7 +158,7 @@
 </g>
 <g class="det" style="animation-delay:0.6s">
   <g class="trk t1">
-    <rect x="350" y="92" width="98" height="544" fill="#e8ecf4" fill-opacity=".035" stroke="#e8ecf4" stroke-opacity=".28" stroke-width="1" stroke-dasharray="2 5"/>
+    <rect x="350" y="92" width="98" height="544" fill="none" stroke="#e8ecf4" stroke-opacity=".28" stroke-width="1" stroke-dasharray="2 5"/>
     <path d="M350 108V92H366 M432 92H448V108 M448 620V636H432 M366 636H350V620" fill="none" stroke="#e8ecf4" stroke-width="2"/>
     <rect x="350" y="73" width="94" height="17" fill="#e8ecf4"/>
     <text x="356" y="85.5" font-size="12" font-weight="700" fill="#06070a">sword</text><text class="sc s0" x="405" y="85.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:1.20s">0.94</text><text class="sc s1" x="405" y="85.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:1.70s">0.93</text><text class="sc s2" x="405" y="85.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:2.20s">0.95</text><text class="sc s3" x="405" y="85.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:2.70s">0.94</text>
@@ -166,7 +166,7 @@
 </g>
 <g class="det" style="animation-delay:1.1s">
   <g class="trk t2">
-    <rect x="700" y="86" width="116" height="120" fill="#ff7a45" fill-opacity=".035" stroke="#ff7a45" stroke-opacity=".28" stroke-width="1" stroke-dasharray="2 5"/>
+    <rect x="700" y="86" width="116" height="120" fill="none" stroke="#ff7a45" stroke-opacity=".28" stroke-width="1" stroke-dasharray="2 5"/>
     <path d="M700 102V86H716 M800 86H816V102 M816 190V206H800 M716 206H700V190" fill="none" stroke="#ff7a45" stroke-width="2"/>
     <rect x="700" y="67" width="127" height="17" fill="#ff7a45"/>
     <text x="706" y="79.5" font-size="12" font-weight="700" fill="#06070a">academics</text><text class="sc s0" x="788" y="79.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:1.70s">0.99</text><text class="sc s1" x="788" y="79.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:2.20s">1.00</text><text class="sc s2" x="788" y="79.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:2.70s">0.99</text><text class="sc s3" x="788" y="79.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:3.20s">1.00</text>
@@ -174,7 +174,7 @@
 </g>
 <g class="det" style="animation-delay:0.85s">
   <g class="trk t3">
-    <rect x="674" y="150" width="92" height="322" fill="#ff3b4e" fill-opacity=".035" stroke="#ff3b4e" stroke-opacity=".28" stroke-width="1" stroke-dasharray="2 5"/>
+    <rect x="674" y="150" width="92" height="322" fill="none" stroke="#ff3b4e" stroke-opacity=".28" stroke-width="1" stroke-dasharray="2 5"/>
     <path d="M674 166V150H690 M750 150H766V166 M766 456V472H750 M690 472H674V456" fill="none" stroke="#ff3b4e" stroke-width="2"/>
     <rect x="772" y="150" width="94" height="17" fill="#ff3b4e"/>
     <text x="778" y="162.5" font-size="12" font-weight="700" fill="#06070a">blood</text><text class="sc s0" x="827" y="162.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:1.45s">0.91</text><text class="sc s1" x="827" y="162.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:1.95s">0.89</text><text class="sc s2" x="827" y="162.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:2.45s">0.92</text><text class="sc s3" x="827" y="162.5" font-size="12" font-weight="700" fill="#06070a" style="animation-delay:2.95s">0.90</text>
