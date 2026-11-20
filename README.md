@@ -8,7 +8,7 @@
 
 ### I build a model, then try to prove it wrong.
 
-Most of my projects start with a baseline that is annoyingly hard to beat. Sometimes I beat it and sometimes I don't, and the battle log above records both. The two studies that ended in "it did not help" taught me more than the wins.
+Most of my projects start with a baseline that is annoyingly hard to beat. Sometimes I beat it and sometimes I don't, and the terminal above shows both. The two studies that ended in "it did not help" taught me more than the wins.
 
 Right now: next-day air quality forecasting for Delhi, and learning data structures properly.
 
