@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="262" viewBox="0 0 552 262" role="img" aria-label="Civicpulse Ai: Photograph a pothole and the app files the report.">
+<title>Civicpulse Ai: Photograph a pothole and the app files the report.</title>
+<style>text{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;white-space:pre}
+.cur{animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.ln{opacity:0;animation:in .35s ease-out forwards}@keyframes in{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+.bar{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.3s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+.dot{opacity:0;animation:pop .25s steps(2) forwards}@keyframes pop{to{opacity:1}}
+.pulse{animation:pulse 2.4s ease-in-out infinite}@keyframes pulse{50%{opacity:.7}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-delay:0s!important}}</style>
+<rect width="552" height="262" fill="#0c0d12"/>
+<path d="M18 248V22H32 M223 22H534V248H18" fill="none" stroke="#3a3f4c" stroke-dasharray="6 5"/>
+<text x="40" y="27" font-size="17" font-weight="700" fill="#d9a441">[ CIVICPULSE AI ]</text>
+<text x="40" y="56" font-size="13" fill="#8e95a4">$ report --photo pothole.jpg<tspan class="cur" fill="#d4d8e0">_</tspan></text>
+<text x="40" y="92" font-size="15" font-weight="700" fill="#f2f4f8">Photograph a pothole and the app files the report.</text>
+<text class="ln" style="animation-delay:0.3s" x="40.0" y="124" font-size="12" fill="#d4d8e0">photo</text>
+<text class="ln" style="animation-delay:0.45s" x="80.0" y="124" font-size="12" fill="#d9a441">→</text>
+<text class="ln" style="animation-delay:0.6s" x="98.0" y="124" font-size="12" fill="#d4d8e0">vision model</text>
+<text class="ln" style="animation-delay:0.75s" x="188.4" y="124" font-size="12" fill="#d9a441">→</text>
+<text class="ln" style="animation-delay:0.9s" x="206.4" y="124" font-size="12" fill="#d4d8e0">category + severity 1-5</text>
+<text class="ln" style="animation-delay:1.05s" x="376.0" y="124" font-size="12" fill="#d9a441">→</text>
+<text class="ln" style="animation-delay:1.2s" x="394.0" y="124" font-size="12" fill="#d4d8e0">report filed</text>
+<text class="ln" style="animation-delay:1.20s" x="40" y="152" font-size="13" fill="#d4d8e0"><tspan fill="#ffb547">★ </tspan>built in one week for a hackathon</text>
+<text class="ln" style="animation-delay:1.45s" x="40" y="174" font-size="13" fill="#d4d8e0"><tspan fill="#7aa7ff">▶ </tspan>live demo, wakes in ~30 s</text>
+<text x="40" y="210" font-size="12" fill="#5d6474"># ai vision · live map · geofenced alerts</text>
+<text x="40" y="232" font-size="13" fill="#7aa7ff">→ github.com/kasheww-nutt/CivicPulseAI</text>
+</svg>
