@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/eval-v3.svg" alt="Every model against its baseline: 2 wins, 2 losses, reported either way" width="100%" />
+  <img src="assets/lab-v1.svg" alt="Kashif's Lab: four experiments and their verdicts, under a crescent moon in a moving field of grass" width="100%" />
 </div>
 
 <div align="center">
