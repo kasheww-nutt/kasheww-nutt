@@ -2,45 +2,38 @@
   <img src="assets/knight-v15.svg" alt="An ASCII knight kneeling in a field of poppies" width="100%" />
 </div>
 
-### I'm Kashif. I build a model, then try to prove it wrong.
-
-Most of my projects start with a baseline that is annoyingly hard to beat. Sometimes I beat it and sometimes I don't, and the terminal below shows both. The two studies that ended in "it did not help" taught me more than the wins.
-
 <div align="center">
   <img src="assets/eval-v3.svg" alt="Every model against its baseline: 2 wins, 2 losses, reported either way" width="100%" />
-</div>
-
-<p align="center">
-  <a href="https://github.com/kasheww-nutt/delhi-aqi-agentic-forecast"><img src="assets/card-aqi.svg" width="49%" alt="Can a model beat tomorrow = today for Delhi air quality? Narrowly: macro-F1 0.600 against 0.583, only with the physics forecast." /></a>
-  <a href="https://github.com/kasheww-nutt/AgriMinds"><img src="assets/card-agri.svg" width="49%" alt="Do three CNNs together beat the best one? On wheat, 91.0% against 88.0%; on easy crops, almost no change. Pre-audit numbers, being rebuilt." /></a>
-  <img src="assets/card-eda.svg" width="49%" alt="Does diffusion-generated sensor data help stress detection? No significant gain across 15 leave-one-subject-out folds." />
-  <a href="https://github.com/kasheww-nutt/speculative-decoding-multilingual"><img src="assets/card-spec.svg" width="49%" alt="Is speculative decoding faster in Hindi and Urdu? No: 0.92x, 0.85x and 0.71x on a laptop GPU." /></a>
-</p>
-
-<div align="center">
-  <img src="assets/method.svg" alt="How I try not to fool myself: baseline first, a locked test set, splits by time or person, no leakage, publish the losses, make it rerunnable." width="100%" />
-</div>
-
-<p align="center">
-  <a href="https://github.com/kasheww-nutt/lean-muscle-tracker"><img src="assets/proj-tracker.svg" width="49%" alt="Fitness tracker: Next.js, SQLite, OAuth and Docker, with 14 test files on every push." /></a>
-  <a href="https://civicpulseai-elfi.onrender.com"><img src="assets/proj-civic.svg" width="49%" alt="CivicPulse AI: photograph a pothole and the app files the report. Opens the live demo." /></a>
-</p>
-
-<div align="center">
-  <img src="assets/activity.svg" alt="The latest commits across my public repositories, redrawn daily" width="100%" />
 </div>
 
 <div align="center">
   <img src="assets/contrib.svg" alt="A year of contributions drawn as an ASCII mountain range, redrawn daily" width="100%" />
 </div>
 
-<div align="center">
-  <img src="assets/tools.svg" alt="Stack: PyTorch, LightGBM, scikit-learn, Transformers, LangGraph, TypeScript, React, Next.js, FastAPI, Docker, SQLite, GitHub Actions" width="100%" />
-</div>
+### I build a model, then try to prove it wrong.
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/kashif-shaik721/"><img src="assets/linkedin.svg" height="48" alt="LinkedIn" /></a>
-  <a href="mailto:shaikkashif40@gmail.com"><img src="assets/email.svg" height="48" alt="Email" /></a>
-  <br />
-  <sub>B.Tech AI and ML · SIT Pune · class of 2028 · CivicPulse code: <a href="https://github.com/kasheww-nutt/CivicPulseAI">repo</a></sub>
-</p>
+Most of my projects start with a baseline that is annoyingly hard to beat. Sometimes I beat it and sometimes I don't, and the terminal above shows both. The two studies that ended in "it did not help" taught me more than the wins.
+
+Right now: next-day air quality forecasting for Delhi, and learning data structures properly.
+
+### The experiments
+
+| | Question | What happened |
+|---|---|---|
+| 🟢 | [**Can a model beat "tomorrow = today" for Delhi air quality?**](https://github.com/kasheww-nutt/delhi-aqi-agentic-forecast) | Narrowly. Macro-F1 0.600 against 0.583 on a held-out year, across 34 stations. It only won once I added a physics forecast as a feature. |
+| 🟢 | [**Do three CNNs together beat the best one?**](https://github.com/kasheww-nutt/AgriMinds) | On hard crops, yes. Wheat went from 88.0% to 91.0%. On easy crops it changed almost nothing. |
+| 🟡 | **Does diffusion-generated sensor data help stress detection?** | No. Across 15 leave-one-subject-out folds nothing was significant. The classifier was already at 0.90 with 5% of the data. |
+| 🔴 | [**Is speculative decoding faster in Hindi and Urdu?**](https://github.com/kasheww-nutt/speculative-decoding-multilingual) | Not on my laptop. 0.92x at best, because the small model was not cheap enough. Urdu accepted the fewest draft tokens. |
+
+### Things I built that people can use
+
+- [**Fitness tracker**](https://github.com/kasheww-nutt/lean-muscle-tracker): Next.js and SQLite with OAuth, Docker, and 14 test files that run on every push.
+- [**CivicPulse AI**](https://github.com/kasheww-nutt/CivicPulseAI): photograph a pothole and the app files the report. Built in a week for a hackathon. [Try it](https://civicpulseai-elfi.onrender.com) (takes about 30 seconds to wake up).
+
+### Stack
+
+`Python` `PyTorch` `scikit-learn` `LightGBM` `Hugging Face` · `TypeScript` `React` `Next.js` `FastAPI` · `Java` `SQL` · `Docker` `GitHub Actions`
+
+### Say hi
+
+[LinkedIn](https://www.linkedin.com/in/kashif-shaik721/) · [shaikkashif40@gmail.com](mailto:shaikkashif40@gmail.com) · B.Tech AI and ML, SIT Pune, class of 2028
