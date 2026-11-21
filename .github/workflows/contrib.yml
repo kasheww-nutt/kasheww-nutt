@@ -59,14 +59,14 @@ jobs:
               }
             }' > "$RUNNER_TEMP/commits.json"
 
-      - name: Draw the lab log
-        run: python scripts/panels.py log "$RUNNER_TEMP/commits.json" "${{ github.repository_owner }}"
+      - name: Draw the activity panel
+        run: python scripts/ui_panels.py log "$RUNNER_TEMP/commits.json" "${{ github.repository_owner }}"
 
       - name: Commit if it changed
         run: |
-          git diff --quiet -- assets/contrib.svg assets/log.svg && { echo "no change"; exit 0; }
+          git diff --quiet -- assets/contrib.svg assets/activity.svg && { echo "no change"; exit 0; }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/contrib.svg assets/log.svg
-          git commit -m "Redraw the contribution ridge and lab log"
+          git add assets/contrib.svg assets/activity.svg
+          git commit -m "Redraw the contribution ridge and activity panel"
           git push

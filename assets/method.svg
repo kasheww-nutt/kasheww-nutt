@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1118" height="420" viewBox="0 0 1118 420" role="img" aria-label="How I try not to fool myself: baseline first, a locked test set, splits by time or person, no leakage, publish the losses, make it rerunnable.">
+<title>How I try not to fool myself: baseline first, a locked test set, splits by time or person, no leakage, publish the losses, make it rerunnable.</title>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Inter','Helvetica Neue',Arial,sans-serif}.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}
+.up{opacity:0;animation:up .6s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.bar{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+.live{animation:live 1.8s ease-in-out infinite}@keyframes live{50%{opacity:.25}}
+.sheen{animation:sheen 7s ease-in-out infinite}@keyframes sheen{0%,60%{transform:translateX(-700px)}100%{transform:translateX(1300px)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-delay:0s!important}}</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131620"/><stop offset="1" stop-color="#0e1017"/></linearGradient>
+<linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9a441" stop-opacity="0"/><stop offset=".5" stop-color="#d9a441" stop-opacity=".8"/><stop offset="1" stop-color="#d9a441" stop-opacity="0"/></linearGradient>
+<radialGradient id="halo" cx=".15" cy="0" r=".9"><stop offset="0" stop-color="#d9a441" stop-opacity=".10"/><stop offset="1" stop-color="#d9a441" stop-opacity="0"/></radialGradient>
+<linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".035"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="cl"><rect x="1" y="1" width="1116" height="418" rx="18"/></clipPath>
+</defs>
+<rect width="1118" height="420" fill="#0c0d12"/>
+<g clip-path="url(#cl)">
+<rect x="1" y="1" width="1116" height="418" fill="url(#bg)"/>
+<rect x="1" y="1" width="1116" height="418" fill="url(#halo)"/>
+<rect class="sheen" x="0" y="0" width="260" height="420" fill="url(#sw)" transform="skewX(-20)"/>
+</g>
+<rect x="1" y="1" width="1116" height="418" rx="18" fill="none" stroke="#252a36"/>
+<rect x="40" y="1" width="1038" height="1.5" fill="url(#top)"/>
+<text x="40" y="50" font-size="12" font-weight="600" letter-spacing="1.6" fill="#8e95a4">METHOD</text>
+<text x="40" y="88" font-size="28" font-weight="700" fill="#f4f6fb">How I try not to fool myself</text>
+<g class="up" style="animation-delay:0.15s"><rect x="40.0" y="116" width="335.3" height="104" rx="12" fill="#ffffff" fill-opacity=".025" stroke="#252a36"/><text class="m" x="58.0" y="148" font-size="13" font-weight="700" fill="#d9a441">01</text><text x="88.0" y="148" font-size="16" font-weight="700" fill="#f4f6fb">Beat the dumb baseline first</text>
+<text x="58.0" y="176" font-size="13.5" fill="#8e95a4">Persistence (&quot;tomorrow = today&quot;) is in every</text>
+<text x="58.0" y="196" font-size="13.5" fill="#8e95a4">AQI comparison.</text>
+</g>
+<g class="up" style="animation-delay:0.27s"><rect x="391.3" y="116" width="335.3" height="104" rx="12" fill="#ffffff" fill-opacity=".025" stroke="#252a36"/><text class="m" x="409.3" y="148" font-size="13" font-weight="700" fill="#d9a441">02</text><text x="439.3" y="148" font-size="16" font-weight="700" fill="#f4f6fb">Lock the test set</text>
+<text x="409.3" y="176" font-size="13.5" fill="#8e95a4">The 2025 test year is hashed and scored</text>
+<text x="409.3" y="196" font-size="13.5" fill="#8e95a4">exactly once.</text>
+</g>
+<g class="up" style="animation-delay:0.39s"><rect x="742.7" y="116" width="335.3" height="104" rx="12" fill="#ffffff" fill-opacity=".025" stroke="#252a36"/><text class="m" x="760.7" y="148" font-size="13" font-weight="700" fill="#d9a441">03</text><text x="790.7" y="148" font-size="16" font-weight="700" fill="#f4f6fb">Split by time, or by person</text>
+<text x="760.7" y="176" font-size="13.5" fill="#8e95a4">Train 2018-22, test 2025. Leave-one-subject-</text>
+<text x="760.7" y="196" font-size="13.5" fill="#8e95a4">out on WESAD.</text>
+</g>
+<g class="up" style="animation-delay:0.51s"><rect x="40.0" y="236" width="335.3" height="104" rx="12" fill="#ffffff" fill-opacity=".025" stroke="#252a36"/><text class="m" x="58.0" y="268" font-size="13" font-weight="700" fill="#d9a441">04</text><text x="88.0" y="268" font-size="16" font-weight="700" fill="#f4f6fb">Make leakage impossible</text>
+<text x="58.0" y="296" font-size="13.5" fill="#8e95a4">45 features carry their day offset; a guard</text>
+<text x="58.0" y="316" font-size="13.5" fill="#8e95a4">halts the run.</text>
+</g>
+<g class="up" style="animation-delay:0.63s"><rect x="391.3" y="236" width="335.3" height="104" rx="12" fill="#ffffff" fill-opacity=".025" stroke="#252a36"/><text class="m" x="409.3" y="268" font-size="13" font-weight="700" fill="#d9a441">05</text><text x="439.3" y="268" font-size="16" font-weight="700" fill="#f4f6fb">Publish the losses</text>
+<text x="409.3" y="296" font-size="13.5" fill="#8e95a4">0.92× and 'no gain' sit on this page next to</text>
+<text x="409.3" y="316" font-size="13.5" fill="#8e95a4">the wins.</text>
+</g>
+<g class="up" style="animation-delay:0.75s"><rect x="742.7" y="236" width="335.3" height="104" rx="12" fill="#ffffff" fill-opacity=".025" stroke="#252a36"/><text class="m" x="760.7" y="268" font-size="13" font-weight="700" fill="#d9a441">06</text><text x="790.7" y="268" font-size="16" font-weight="700" fill="#f4f6fb">Make it rerunnable</text>
+<text x="760.7" y="296" font-size="13.5" fill="#8e95a4">Pinned versions, fixed seeds, an audit that</text>
+<text x="760.7" y="316" font-size="13.5" fill="#8e95a4">needs no GPU.</text>
+</g>
+<text x="40" y="386" font-size="15" font-style="italic" fill="#c9ceda">“You must not fool yourself, and you are the easiest person to fool.”<tspan font-style="normal" font-size="13" fill="#d9a441">   Richard Feynman</tspan></text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1118" height="436" viewBox="0 0 1118 436" role="img" aria-label="Stack: PyTorch, LightGBM, scikit-learn, Transformers, LangGraph, TypeScript, React, Next.js, FastAPI, Docker, SQLite, GitHub Actions, AWS EC2, Python, Java, SQL.">
+<title>Stack: PyTorch, LightGBM, scikit-learn, Transformers, LangGraph, TypeScript, React, Next.js, FastAPI, Docker, SQLite, GitHub Actions, AWS EC2, Python, Java, SQL.</title>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Inter','Helvetica Neue',Arial,sans-serif}.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}
+.up{opacity:0;animation:up .6s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.bar{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+.live{animation:live 1.8s ease-in-out infinite}@keyframes live{50%{opacity:.25}}
+.sheen{animation:sheen 7s ease-in-out infinite}@keyframes sheen{0%,60%{transform:translateX(-700px)}100%{transform:translateX(1300px)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-delay:0s!important}}</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131620"/><stop offset="1" stop-color="#0e1017"/></linearGradient>
+<linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9a441" stop-opacity="0"/><stop offset=".5" stop-color="#d9a441" stop-opacity=".8"/><stop offset="1" stop-color="#d9a441" stop-opacity="0"/></linearGradient>
+<radialGradient id="halo" cx=".15" cy="0" r=".9"><stop offset="0" stop-color="#d9a441" stop-opacity=".10"/><stop offset="1" stop-color="#d9a441" stop-opacity="0"/></radialGradient>
+<linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".035"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="cl"><rect x="1" y="1" width="1116" height="434" rx="18"/></clipPath>
+</defs>
+<rect width="1118" height="436" fill="#0c0d12"/>
+<g clip-path="url(#cl)">
+<rect x="1" y="1" width="1116" height="434" fill="url(#bg)"/>
+<rect x="1" y="1" width="1116" height="434" fill="url(#halo)"/>
+<rect class="sheen" x="0" y="0" width="260" height="436" fill="url(#sw)" transform="skewX(-20)"/>
+</g>
+<rect x="1" y="1" width="1116" height="434" rx="18" fill="none" stroke="#252a36"/>
+<rect x="40" y="1" width="1038" height="1.5" fill="url(#top)"/>
+<text x="40" y="50" font-size="12" font-weight="600" letter-spacing="1.6" fill="#8e95a4">STACK</text>
+<text x="40" y="88" font-size="28" font-weight="700" fill="#f4f6fb">Tools, and where I used them</text>
+<rect x="40" y="118" width="18" height="3" rx="1.5" fill="#3ddc97"/><text x="40" y="144" font-size="13" font-weight="700" letter-spacing="1" fill="#3ddc97">MACHINE LEARNING</text>
+<g class="up" style="animation-delay:0.15s"><text x="40" y="178" font-size="15.5" font-weight="600" fill="#f4f6fb">PyTorch</text><text x="40" y="195" font-size="12" fill="#5d6474">diffusion study</text></g>
+<g class="up" style="animation-delay:0.21s"><text x="40" y="218" font-size="15.5" font-weight="600" fill="#f4f6fb">LightGBM</text><text x="40" y="235" font-size="12" fill="#5d6474">air quality</text></g>
+<g class="up" style="animation-delay:0.27s"><text x="40" y="258" font-size="15.5" font-weight="600" fill="#f4f6fb">scikit-learn</text><text x="40" y="275" font-size="12" fill="#5d6474">air quality</text></g>
+<g class="up" style="animation-delay:0.33s"><text x="40" y="298" font-size="15.5" font-weight="600" fill="#f4f6fb">Transformers</text><text x="40" y="315" font-size="12" fill="#5d6474">speculative decoding</text></g>
+<g class="up" style="animation-delay:0.39s"><text x="40" y="338" font-size="15.5" font-weight="600" fill="#f4f6fb">LangGraph</text><text x="40" y="355" font-size="12" fill="#5d6474">air quality</text></g>
+<g class="up" style="animation-delay:0.45s"><text x="40" y="378" font-size="15.5" font-weight="600" fill="#f4f6fb">SHAP</text><text x="40" y="395" font-size="12" fill="#5d6474">air quality</text></g>
+<rect x="300" y="118" width="18" height="3" rx="1.5" fill="#7aa7ff"/><text x="300" y="144" font-size="13" font-weight="700" letter-spacing="1" fill="#7aa7ff">WEB</text>
+<g class="up" style="animation-delay:0.27s"><text x="300" y="178" font-size="15.5" font-weight="600" fill="#f4f6fb">TypeScript</text><text x="300" y="195" font-size="12" fill="#5d6474">fitness tracker</text></g>
+<g class="up" style="animation-delay:0.33s"><text x="300" y="218" font-size="15.5" font-weight="600" fill="#f4f6fb">React</text><text x="300" y="235" font-size="12" fill="#5d6474">air quality console</text></g>
+<g class="up" style="animation-delay:0.39s"><text x="300" y="258" font-size="15.5" font-weight="600" fill="#f4f6fb">Next.js</text><text x="300" y="275" font-size="12" fill="#5d6474">fitness tracker</text></g>
+<g class="up" style="animation-delay:0.45s"><text x="300" y="298" font-size="15.5" font-weight="600" fill="#f4f6fb">FastAPI</text><text x="300" y="315" font-size="12" fill="#5d6474">air quality API</text></g>
+<rect x="559" y="118" width="18" height="3" rx="1.5" fill="#ffb547"/><text x="559" y="144" font-size="13" font-weight="700" letter-spacing="1" fill="#ffb547">INFRASTRUCTURE</text>
+<g class="up" style="animation-delay:0.39s"><text x="559" y="178" font-size="15.5" font-weight="600" fill="#f4f6fb">Docker</text><text x="559" y="195" font-size="12" fill="#5d6474">fitness tracker</text></g>
+<g class="up" style="animation-delay:0.45s"><text x="559" y="218" font-size="15.5" font-weight="600" fill="#f4f6fb">SQLite</text><text x="559" y="235" font-size="12" fill="#5d6474">fitness tracker</text></g>
+<g class="up" style="animation-delay:0.51s"><text x="559" y="258" font-size="15.5" font-weight="600" fill="#f4f6fb">GitHub Actions</text><text x="559" y="275" font-size="12" fill="#5d6474">this page</text></g>
+<g class="up" style="animation-delay:0.57s"><text x="559" y="298" font-size="15.5" font-weight="600" fill="#f4f6fb">AWS EC2</text><text x="559" y="315" font-size="12" fill="#5d6474">fitness tracker</text></g>
+<rect x="818" y="118" width="18" height="3" rx="1.5" fill="#d9a441"/><text x="818" y="144" font-size="13" font-weight="700" letter-spacing="1" fill="#d9a441">LANGUAGES</text>
+<g class="up" style="animation-delay:0.51s"><text x="818" y="178" font-size="15.5" font-weight="600" fill="#f4f6fb">Python</text><text x="818" y="195" font-size="12" fill="#5d6474">most of it</text></g>
+<g class="up" style="animation-delay:0.57s"><text x="818" y="218" font-size="15.5" font-weight="600" fill="#f4f6fb">TypeScript</text><text x="818" y="235" font-size="12" fill="#5d6474">web</text></g>
+<g class="up" style="animation-delay:0.63s"><text x="818" y="258" font-size="15.5" font-weight="600" fill="#f4f6fb">Java</text><text x="818" y="275" font-size="12" fill="#5d6474">IntelliBill</text></g>
+<g class="up" style="animation-delay:0.69s"><text x="818" y="298" font-size="15.5" font-weight="600" fill="#f4f6fb">SQL</text></g>
+</svg>

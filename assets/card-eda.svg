@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="384" viewBox="0 0 552 384" role="img" aria-label="Does diffusion-generated sensor data help stress detection? Verdict: no gain.">
+<title>Does diffusion-generated sensor data help stress detection? Verdict: no gain.</title>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Inter','Helvetica Neue',Arial,sans-serif}.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}
+.up{opacity:0;animation:up .6s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.bar{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+.live{animation:live 1.8s ease-in-out infinite}@keyframes live{50%{opacity:.25}}
+.sheen{animation:sheen 7s ease-in-out infinite}@keyframes sheen{0%,60%{transform:translateX(-700px)}100%{transform:translateX(1300px)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-delay:0s!important}}</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131620"/><stop offset="1" stop-color="#0e1017"/></linearGradient>
+<linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffb547" stop-opacity="0"/><stop offset=".5" stop-color="#ffb547" stop-opacity=".8"/><stop offset="1" stop-color="#ffb547" stop-opacity="0"/></linearGradient>
+<radialGradient id="halo" cx=".15" cy="0" r=".9"><stop offset="0" stop-color="#ffb547" stop-opacity=".10"/><stop offset="1" stop-color="#ffb547" stop-opacity="0"/></radialGradient>
+<linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".035"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="cl"><rect x="1" y="1" width="550" height="382" rx="18"/></clipPath>
+</defs>
+<rect width="552" height="384" fill="#0c0d12"/>
+<g clip-path="url(#cl)">
+<rect x="1" y="1" width="550" height="382" fill="url(#bg)"/>
+<rect x="1" y="1" width="550" height="382" fill="url(#halo)"/>
+<rect class="sheen" x="0" y="0" width="260" height="384" fill="url(#sw)" transform="skewX(-20)"/>
+</g>
+<rect x="1" y="1" width="550" height="382" rx="18" fill="none" stroke="#252a36"/>
+<rect x="40" y="1" width="472" height="1.5" fill="url(#top)"/>
+<text x="32" y="46" font-size="12" font-weight="600" letter-spacing="1.6" fill="#8e95a4">EXPERIMENT 03 · SYNTHETIC SENSOR DATA</text>
+<rect x="425.6" y="27" width="98.4" height="26" rx="13" fill="#ffb547" fill-opacity=".12" stroke="#ffb547" stroke-opacity=".45"/><circle class="live" cx="439.6" cy="40" r="3.5" fill="#ffb547"/><text x="449.6" y="44.5" font-size="12" font-weight="700" letter-spacing=".8" fill="#ffb547">NO GAIN</text>
+<text class="up" x="32" y="90" font-size="21" font-weight="700" fill="#f4f6fb">Does diffusion-generated sensor data</text>
+<text class="up" x="32" y="118" font-size="21" font-weight="700" fill="#f4f6fb">help stress detection?</text>
+<text x="32" y="156" font-size="12" fill="#5d6474">one circle per held-out person · filled = significant gain</text>
+<circle class="up" style="animation-delay:0.20s" cx="42" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.26s" cx="66" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.32s" cx="90" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.38s" cx="114" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.44s" cx="138" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.50s" cx="162" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.56s" cx="186" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.62s" cx="210" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.68s" cx="234" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.74s" cx="258" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.80s" cx="282" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.86s" cx="306" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.92s" cx="330" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:0.98s" cx="354" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<circle class="up" style="animation-delay:1.04s" cx="378" cy="182" r="8" fill="none" stroke="#ffb547" stroke-width="2"/>
+<text x="32" y="212" font-size="15" font-weight="700" fill="#ffb547">0 of 15 significant</text>
+<circle cx="36" cy="237.5" r="2" fill="#5d6474"/><text x="46" y="242" font-size="13.5" fill="#8e95a4">Leave-one-subject-out: the test person never trains</text>
+<circle cx="36" cy="259.5" r="2" fill="#5d6474"/><text x="46" y="264" font-size="13.5" fill="#8e95a4">The classifier was already at 0.90 with 5% of the data</text>
+<line x1="32" y1="326" x2="520" y2="326" stroke="#252a36"/><text x="32" y="358" font-size="14" font-weight="600" fill="#5d6474">Repository private for now</text><text x="520" y="358" font-size="12" fill="#5d6474" text-anchor="end"></text>
+</svg>
