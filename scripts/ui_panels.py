@@ -18,14 +18,7 @@ BG, CARD, CARD2, LINE, TRACK = "#0c0d12", "#131620", "#0e1017", "#252a36", "#1d2
 WHITE, TEXT, DIM, FAINT = "#f4f6fb", "#c9ceda", "#8e95a4", "#5d6474"
 GOLD, GREEN, AMBER, RED, LINK = "#d9a441", "#3ddc97", "#ffb547", "#ff4d5e", "#7aa7ff"
 
-CSS = f"""text{{font-family:{SANS}}}.m{{font-family:{MONO}}}
-.up{{opacity:0;animation:up .6s cubic-bezier(.2,.8,.2,1) forwards}}
-@keyframes up{{from{{opacity:0;transform:translateY(8px)}}to{{opacity:1;transform:none}}}}
-.bar{{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.2,.8,.2,1) forwards}}
-@keyframes grow{{to{{transform:scaleX(1)}}}}
-.live{{animation:live 1.8s ease-in-out infinite}}@keyframes live{{50%{{opacity:.25}}}}
-.sheen{{animation:sheen 7s ease-in-out infinite}}@keyframes sheen{{0%,60%{{transform:translateX(-700px)}}100%{{transform:translateX(1300px)}}}}
-@media (prefers-reduced-motion:reduce){{*{{animation-duration:0s!important;animation-delay:0s!important}}}}"""
+CSS = f"""text{{font-family:{SANS}}}.m{{font-family:{MONO}}}"""
 
 
 def esc(s):
@@ -38,25 +31,12 @@ def width(s, size, bold=False):
 
 
 def shell(w, h, body, label, glow=GOLD):
-    """rounded card with a soft top highlight and a slow light sweep"""
+    """plain flat card: solid fill, thin border"""
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(label)}">
 <title>{esc(label)}</title>
 <style>{CSS}</style>
-<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{CARD}"/><stop offset="1" stop-color="{CARD2}"/></linearGradient>
-<linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{glow}" stop-opacity="0"/><stop offset=".5" stop-color="{glow}" stop-opacity=".8"/><stop offset="1" stop-color="{glow}" stop-opacity="0"/></linearGradient>
-<radialGradient id="halo" cx=".15" cy="0" r=".9"><stop offset="0" stop-color="{glow}" stop-opacity=".10"/><stop offset="1" stop-color="{glow}" stop-opacity="0"/></radialGradient>
-<linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".035"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-<clipPath id="cl"><rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="18"/></clipPath>
-</defs>
 <rect width="{w}" height="{h}" fill="{BG}"/>
-<g clip-path="url(#cl)">
-<rect x="1" y="1" width="{w - 2}" height="{h - 2}" fill="url(#bg)"/>
-<rect x="1" y="1" width="{w - 2}" height="{h - 2}" fill="url(#halo)"/>
-<rect class="sheen" x="0" y="0" width="260" height="{h}" fill="url(#sw)" transform="skewX(-20)"/>
-</g>
-<rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="18" fill="none" stroke="{LINE}"/>
-<rect x="40" y="1" width="{w - 80}" height="1.5" fill="url(#top)"/>
+<rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="14" fill="{CARD}" stroke="{LINE}"/>
 {body}
 </svg>"""
 
@@ -68,7 +48,7 @@ def eyebrow(x, y, s, col=DIM):
 def pill(x_right, y, s, col, dot=True):
     w = len(s) * (12 * .7 + .8) + (34 if dot else 22)
     x = x_right - w
-    d = f'<circle class="live" cx="{x + 14}" cy="{y + 13}" r="3.5" fill="{col}"/>' if dot else ""
+    d = f'<circle cx="{x + 14}" cy="{y + 13}" r="3.5" fill="{col}"/>' if dot else ""
     return (f'<rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="26" rx="13" fill="{col}" fill-opacity=".12" stroke="{col}" stroke-opacity=".45"/>'
             f'{d}<text x="{x + (24 if dot else 11):.1f}" y="{y + 17.5}" font-size="12" font-weight="700" letter-spacing=".8" fill="{col}">{esc(s)}</text>')
 
@@ -138,7 +118,7 @@ def card(e):
     out = [eyebrow(32, 46, f'Experiment {e["n"]} · {e["tag"]}'), pill(w - 28, 27, e["verdict"][0], e["verdict"][1])]
     y = 90
     for line in textwrap.wrap(e["q"], 40):
-        out.append(f'<text class="up" x="32" y="{y}" font-size="21" font-weight="700" fill="{WHITE}">{esc(line)}</text>')
+        out.append(f'<text x="32" y="{y}" font-size="21" font-weight="700" fill="{WHITE}">{esc(line)}</text>')
         y += 28
     y += 10
     if "bars" in e:
@@ -153,7 +133,7 @@ def card(e):
             fill = (v - e["lo"]) / (e["hi"] - e["lo"]) * span
             out.append(f'<text x="32" y="{y + 15}" font-size="14" fill="{TEXT}">{esc(lab)}</text>'
                        f'<rect x="{x0}" y="{y + 5}" width="{span}" height="12" rx="6" fill="{TRACK}"/>'
-                       f'<rect class="bar" style="animation-delay:{.25 + i * .2:.2f}s" x="{x0}" y="{y + 5}" width="{fill:.1f}" height="12" rx="6" fill="{col}"/>'
+                       f'<rect x="{x0}" y="{y + 5}" width="{fill:.1f}" height="12" rx="6" fill="{col}"/>'
                        f'<text class="m" x="{w - 32}" y="{y + 16}" font-size="15" font-weight="700" fill="{col if col != FAINT else DIM}" text-anchor="end">{e["fmt"].format(v)}</text>')
             y += 30
         if "ref" in e:
@@ -164,7 +144,7 @@ def card(e):
         out.append(f'<text x="32" y="{y}" font-size="12" fill="{FAINT}">one circle per held-out person · filled = significant gain</text>')
         y += 26
         for i in range(e["folds"]):
-            out.append(f'<circle class="up" style="animation-delay:{.2 + i * .06:.2f}s" cx="{42 + i * 24}" cy="{y}" r="8" fill="none" stroke="{AMBER}" stroke-width="2"/>')
+            out.append(f'<circle cx="{42 + i * 24}" cy="{y}" r="8" fill="none" stroke="{AMBER}" stroke-width="2"/>')
         y += 30
         out.append(f'<text x="32" y="{y}" font-size="15" font-weight="700" fill="{AMBER}">0 of {e["folds"]} significant</text>')
         y += 12
@@ -198,7 +178,7 @@ def method():
     for i, (rule, ex) in enumerate(RULES):
         c, r = i % cols, i // cols
         x, y = 40 + c * (tw_ + 16), 116 + r * (th_ + 16)
-        out.append(f'<g class="up" style="animation-delay:{.15 + i * .12:.2f}s">'
+        out.append(f'<g>'
                    f'<rect x="{x:.1f}" y="{y}" width="{tw_:.1f}" height="{th_}" rx="12" fill="#ffffff" fill-opacity=".025" stroke="{LINE}"/>'
                    f'<text class="m" x="{x + 18:.1f}" y="{y + 32}" font-size="13" font-weight="700" fill="{GOLD}">{i + 1:02d}</text>'
                    f'<text x="{x + 48:.1f}" y="{y + 32}" font-size="16" font-weight="700" fill="{WHITE}">{esc(rule)}</text>')
@@ -234,14 +214,14 @@ def project(p):
     y = 146
     if "checks" in p:
         for i, c in enumerate(p["checks"]):
-            out.append(f'<g class="up" style="animation-delay:{.2 + i * .15:.2f}s">{check(40, y - 5)}'
+            out.append(f'<g>{check(40, y - 5)}'
                        f'<text x="58" y="{y}" font-size="13.5" fill="{TEXT}">{esc(c)}</text></g>')
             y += 26
     else:
         x = 32
         for i, s in enumerate(p["flow"]):
             bw = width(s, 12.5, True) + 18
-            out.append(f'<g class="up" style="animation-delay:{.2 + i * .18:.2f}s"><rect x="{x:.1f}" y="{y - 20}" width="{bw:.1f}" height="30" rx="8" '
+            out.append(f'<g><rect x="{x:.1f}" y="{y - 20}" width="{bw:.1f}" height="30" rx="8" '
                        f'fill="{LINK}" fill-opacity="{.08 + i * .05:.2f}" stroke="{LINK}" stroke-opacity=".35"/>'
                        f'<text x="{x + 9:.1f}" y="{y}" font-size="12.5" font-weight="600" fill="{WHITE}">{esc(s)}</text></g>')
             x += bw
@@ -279,7 +259,7 @@ def stack():
                    f'<text x="{x:.0f}" y="144" font-size="13" font-weight="700" letter-spacing="1" fill="{col}">{esc(head.upper())}</text>')
         for i, (name, where) in enumerate(items):
             y = 178 + i * 40
-            out.append(f'<g class="up" style="animation-delay:{.15 + c * .12 + i * .06:.2f}s">'
+            out.append(f'<g>'
                        f'<text x="{x:.0f}" y="{y}" font-size="15.5" font-weight="600" fill="{WHITE}">{esc(name)}</text>'
                        + (f'<text x="{x:.0f}" y="{y + 17}" font-size="12" fill="{FAINT}">{esc(where)}</text>' if where else "") + "</g>")
     return shell(w, h, "\n".join(out), "Stack: PyTorch, LightGBM, scikit-learn, Transformers, LangGraph, TypeScript, React, Next.js, FastAPI, "
@@ -327,7 +307,7 @@ def activity(data, user, now=None, rows=6):
     for i, (when, repo, oid, msg) in enumerate(commits):
         msg = msg if len(msg) <= 70 else msg[:69] + "…"
         rw = width(repo, 12, True) + 20
-        out.append(f'<g class="up" style="animation-delay:{.15 + i * .12:.2f}s">'
+        out.append(f'<g>'
                    f'<circle cx="48" cy="{y}" r="6" fill="{GREEN if i == 0 else CARD}" stroke="{GREEN if i == 0 else FAINT}" stroke-width="2"/>'
                    f'<text x="72" y="{y + 5}" font-size="15" fill="{WHITE}">{esc(msg)}</text>'
                    f'<rect x="{w - 40 - 96 - rw:.1f}" y="{y - 12}" width="{rw:.1f}" height="24" rx="7" fill="{GOLD}" fill-opacity=".1" stroke="{GOLD}" stroke-opacity=".35"/>'
